@@ -6415,18 +6415,6 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="ADC6"/>
 </segment>
 </net>
-<net name="A4_SDA" class="0">
-<segment>
-<wire x1="80.01" y1="139.7" x2="91.44" y2="139.7" width="0.1524" layer="91"/>
-<label x="82.55" y="139.7" size="1.778" layer="95"/>
-<pinref part="ATMEGA328" gate="G$1" pin="PC4(ADC4/SDA)"/>
-</segment>
-<segment>
-<wire x1="-101.6" y1="238.76" x2="-106.68" y2="238.76" width="0.1524" layer="91"/>
-<label x="-114.3" y="238.76" size="1.778" layer="95"/>
-<pinref part="JP5" gate="A" pin="9"/>
-</segment>
-</net>
 <net name="A3" class="0">
 <segment>
 <wire x1="80.01" y1="142.24" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
@@ -6527,18 +6515,6 @@ alternative power source (VGEN1)</text>
 <label x="112.522" y="94.742" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A5_SCL" class="0">
-<segment>
-<wire x1="80.01" y1="137.16" x2="91.44" y2="137.16" width="0.1524" layer="91"/>
-<label x="82.55" y="137.16" size="1.778" layer="95"/>
-<pinref part="ATMEGA328" gate="G$1" pin="PC5(ADC5/SCL)"/>
-</segment>
-<segment>
-<wire x1="-101.6" y1="236.22" x2="-106.68" y2="236.22" width="0.1524" layer="91"/>
-<label x="-114.3" y="236.22" size="1.778" layer="95"/>
-<pinref part="JP5" gate="A" pin="11"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -6605,6 +6581,16 @@ alternative power source (VGEN1)</text>
 <wire x1="247.142" y1="238.252" x2="252.222" y2="238.252" width="0.1524" layer="91"/>
 <label x="248.412" y="238.252" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="80.01" y1="139.7" x2="91.44" y2="139.7" width="0.1524" layer="91"/>
+<label x="82.55" y="139.7" size="1.778" layer="95"/>
+<pinref part="ATMEGA328" gate="G$1" pin="PC4(ADC4/SDA)"/>
+</segment>
+<segment>
+<wire x1="-101.6" y1="238.76" x2="-106.68" y2="238.76" width="0.1524" layer="91"/>
+<label x="-114.3" y="238.76" size="1.778" layer="95"/>
+<pinref part="JP5" gate="A" pin="9"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -6621,6 +6607,16 @@ alternative power source (VGEN1)</text>
 <pinref part="IC5" gate="G$1" pin="SCL"/>
 <wire x1="219.202" y1="245.872" x2="212.852" y2="245.872" width="0.1524" layer="91"/>
 <label x="214.122" y="245.872" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="80.01" y1="137.16" x2="91.44" y2="137.16" width="0.1524" layer="91"/>
+<label x="82.55" y="137.16" size="1.778" layer="95"/>
+<pinref part="ATMEGA328" gate="G$1" pin="PC5(ADC5/SCL)"/>
+</segment>
+<segment>
+<wire x1="-101.6" y1="236.22" x2="-106.68" y2="236.22" width="0.1524" layer="91"/>
+<label x="-114.3" y="236.22" size="1.778" layer="95"/>
+<pinref part="JP5" gate="A" pin="11"/>
 </segment>
 </net>
 <net name="RTC_BATT" class="0">
