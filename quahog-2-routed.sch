@@ -6206,6 +6206,12 @@ alternative power source (VGEN1)</text>
 <wire x1="135.382" y1="97.282" x2="146.812" y2="97.282" width="0.1524" layer="91"/>
 <label x="140.462" y="97.282" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BATTPOWER" gate="A" pin="S"/>
+<wire x1="425.196" y1="257.048" x2="432.308" y2="257.048" width="0.1524" layer="91"/>
+<wire x1="432.308" y1="257.048" x2="432.308" y2="259.588" width="0.1524" layer="91"/>
+<label x="432.054" y="260.858" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$20" class="0">
 <segment>
@@ -6683,14 +6689,6 @@ alternative power source (VGEN1)</text>
 <junction x="343.408" y="244.602"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="BATTPOWER" gate="A" pin="S"/>
-<wire x1="425.196" y1="257.048" x2="432.308" y2="257.048" width="0.1524" layer="91"/>
-<wire x1="432.308" y1="257.048" x2="432.308" y2="259.588" width="0.1524" layer="91"/>
-<label x="432.054" y="260.858" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
