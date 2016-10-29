@@ -5781,7 +5781,7 @@ JST PH 2-pin thru-home side entry</description>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="SD" library="hrs_DM3D-SF" deviceset="MICROSD-HRS_DM3D" device=""/>
+<part name="MICROSD" library="hrs_DM3D-SF" deviceset="MICROSD-HRS_DM3D" device=""/>
 <part name="M1" library="zetex" deviceset="PMOSSOT23" device="" value="FDN340P"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
@@ -5868,7 +5868,7 @@ alternative power source (VGEN1)</text>
 <instance part="GND1" gate="1" x="-142.24" y="265.43" rot="R270"/>
 <instance part="P+6" gate="VCC" x="-109.982" y="267.97"/>
 <instance part="GND4" gate="1" x="413.512" y="213.868"/>
-<instance part="SD" gate="G$1" x="290.322" y="229.362"/>
+<instance part="MICROSD" gate="G$1" x="290.322" y="229.362"/>
 <instance part="M1" gate="A" x="420.116" y="257.048" rot="MR270"/>
 <instance part="GND7" gate="1" x="398.018" y="257.048" rot="R270"/>
 <instance part="GND10" gate="1" x="308.102" y="207.01"/>
@@ -6045,27 +6045,27 @@ alternative power source (VGEN1)</text>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="SD" gate="G$1" pin="GND"/>
+<pinref part="MICROSD" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="309.372" y1="242.062" x2="308.102" y2="242.062" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SD" gate="G$1" pin="SW_B"/>
+<pinref part="MICROSD" gate="G$1" pin="SW_B"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="308.102" y1="209.55" x2="308.102" y2="214.122" width="0.1524" layer="91"/>
-<pinref part="SD" gate="G$1" pin="GND2"/>
-<pinref part="SD" gate="G$1" pin="GND3"/>
+<pinref part="MICROSD" gate="G$1" pin="GND2"/>
+<pinref part="MICROSD" gate="G$1" pin="GND3"/>
 <wire x1="308.102" y1="226.822" x2="308.102" y2="224.282" width="0.1524" layer="91"/>
-<pinref part="SD" gate="G$1" pin="GND4"/>
+<pinref part="MICROSD" gate="G$1" pin="GND4"/>
 <wire x1="308.102" y1="224.282" x2="308.102" y2="221.742" width="0.1524" layer="91"/>
-<pinref part="SD" gate="G$1" pin="SW_A"/>
+<pinref part="MICROSD" gate="G$1" pin="SW_A"/>
 <wire x1="308.102" y1="221.742" x2="308.102" y2="216.662" width="0.1524" layer="91"/>
 <wire x1="308.102" y1="216.662" x2="308.102" y2="214.122" width="0.1524" layer="91"/>
 <junction x="308.102" y="224.282"/>
 <junction x="308.102" y="221.742"/>
 <junction x="308.102" y="216.662"/>
 <junction x="308.102" y="214.122"/>
-<pinref part="SD" gate="G$1" pin="GND1"/>
+<pinref part="MICROSD" gate="G$1" pin="GND1"/>
 <wire x1="308.102" y1="229.362" x2="308.102" y2="226.822" width="0.1524" layer="91"/>
 <junction x="308.102" y="226.822"/>
 <junction x="308.102" y="229.362"/>
@@ -6276,7 +6276,7 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="PD7(AIN1)"/>
 </segment>
 <segment>
-<pinref part="SD" gate="G$1" pin="CD/DAT3"/>
+<pinref part="MICROSD" gate="G$1" pin="CD/DAT3"/>
 <wire x1="308.102" y1="236.982" x2="318.77" y2="236.982" width="0.1524" layer="91"/>
 <label x="320.802" y="236.982" size="1.778" layer="95"/>
 </segment>
@@ -6451,7 +6451,7 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="SD" gate="G$1" pin="CLK"/>
+<pinref part="MICROSD" gate="G$1" pin="CLK"/>
 <wire x1="308.102" y1="247.142" x2="319.024" y2="247.142" width="0.1524" layer="91"/>
 <label x="320.802" y="247.142" size="1.778" layer="95"/>
 </segment>
@@ -6468,7 +6468,7 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="SD" gate="G$1" pin="DAT0"/>
+<pinref part="MICROSD" gate="G$1" pin="DAT0"/>
 <wire x1="308.102" y1="249.682" x2="319.024" y2="249.682" width="0.1524" layer="91"/>
 <label x="320.802" y="249.682" size="1.778" layer="95"/>
 </segment>
@@ -6485,7 +6485,7 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="SD" gate="G$1" pin="CMD"/>
+<pinref part="MICROSD" gate="G$1" pin="CMD"/>
 <wire x1="308.102" y1="239.522" x2="318.77" y2="239.522" width="0.1524" layer="91"/>
 <label x="320.802" y="239.522" size="1.778" layer="95"/>
 </segment>
@@ -6599,7 +6599,7 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="SD" gate="G$1" pin="DAT1"/>
+<pinref part="MICROSD" gate="G$1" pin="DAT1"/>
 <wire x1="308.102" y1="252.222" x2="308.102" y2="254.762" width="0.1524" layer="91"/>
 <wire x1="308.102" y1="254.762" x2="343.408" y2="254.762" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -6607,7 +6607,7 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="SD" gate="G$1" pin="DAT2"/>
+<pinref part="MICROSD" gate="G$1" pin="DAT2"/>
 <wire x1="308.102" y1="234.442" x2="343.408" y2="234.442" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
@@ -6619,7 +6619,7 @@ alternative power source (VGEN1)</text>
 <wire x1="354.076" y1="271.272" x2="349.758" y2="271.272" width="0.1524" layer="91"/>
 <junction x="354.076" y="271.272"/>
 <wire x1="354.076" y1="271.272" x2="354.076" y2="244.602" width="0.1524" layer="91"/>
-<pinref part="SD" gate="G$1" pin="VDD"/>
+<pinref part="MICROSD" gate="G$1" pin="VDD"/>
 <wire x1="308.102" y1="244.602" x2="343.408" y2="244.602" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="343.408" y1="244.602" x2="354.076" y2="244.602" width="0.1524" layer="91"/>
