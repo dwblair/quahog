@@ -470,12 +470,6 @@ chip</description>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="point" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="VCC2">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -516,19 +510,6 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="VCC2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5771,7 +5752,6 @@ JST PH 2-pin thru-home side entry</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="Moteino"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="SparkFun" deviceset="VCC" device="" value="3.3V"/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="X1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="16 MHz"/>
@@ -5826,9 +5806,7 @@ JST PH 2-pin thru-home side entry</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="SUPPLY11" library="SparkFun" deviceset="VCC" device="" value="3.3V"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M07" device=""/>
-<part name="SUPPLY12" library="SparkFun" deviceset="VCC" device="" value="3.3V"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 </parts>
@@ -5854,7 +5832,6 @@ alternative power source (VGEN1)</text>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="SUPPLY5" gate="GND" x="19.05" y="124.46"/>
-<instance part="SUPPLY3" gate="1" x="193.04" y="76.2"/>
 <instance part="SUPPLY10" gate="GND" x="193.04" y="53.34"/>
 <instance part="SUPPLY14" gate="GND" x="29.21" y="88.9"/>
 <instance part="X1" gate="G$1" x="29.21" y="114.3"/>
@@ -5930,9 +5907,7 @@ alternative power source (VGEN1)</text>
 <instance part="SUPPLY7" gate="GND" x="-78.74" y="233.68"/>
 <instance part="SUPPLY8" gate="GND" x="289.56" y="83.82"/>
 <instance part="P+2" gate="VCC" x="340.36" y="91.44"/>
-<instance part="SUPPLY11" gate="1" x="289.56" y="91.44"/>
 <instance part="J2" gate="G$1" x="17.78" y="27.94"/>
-<instance part="SUPPLY12" gate="1" x="22.86" y="40.64"/>
 <instance part="P+4" gate="VCC" x="17.78" y="165.1"/>
 <instance part="J3" gate="G$1" x="358.14" y="25.4"/>
 </instances>
@@ -6126,13 +6101,6 @@ alternative power source (VGEN1)</text>
 <wire x1="289.56" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D10_SS" class="0">
-<segment>
-<wire x1="80.01" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
-<label x="82.55" y="99.06" size="1.778" layer="95"/>
-<pinref part="ATMEGA328" gate="G$1" pin="PB2(SS/OC1B)"/>
-</segment>
-</net>
 <net name="RST" class="0">
 <segment>
 <label x="30.226" y="147.828" size="1.778" layer="95"/>
@@ -6222,17 +6190,6 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="193.04" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="VO"/>
-<pinref part="SUPPLY3" gate="1" pin="VCC"/>
-<wire x1="193.04" y1="71.12" x2="193.04" y2="76.2" width="0.2032" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<junction x="193.04" y="71.12"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<junction x="200.66" y="71.12"/>
-</segment>
-<segment>
 <pinref part="IC5" gate="G$1" pin="VCC"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="239.522" y1="253.492" x2="239.522" y2="250.952" width="0.1524" layer="91"/>
@@ -6266,16 +6223,6 @@ alternative power source (VGEN1)</text>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="320.04" y1="88.9" x2="340.36" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="289.56" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="7"/>
-<pinref part="SUPPLY12" gate="1" pin="VCC"/>
-<wire x1="22.86" y1="40.64" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="162.56" x2="19.05" y2="149.86" width="0.2032" layer="91"/>
@@ -6562,7 +6509,12 @@ alternative power source (VGEN1)</text>
 <segment>
 <pinref part="JP5" gate="A" pin="6"/>
 <wire x1="-93.98" y1="243.84" x2="-88.9" y2="243.84" width="0.1524" layer="91"/>
-<label x="-88.9" y="243.84" size="1.778" layer="95"/>
+<label x="-86.36" y="243.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="80.01" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<label x="82.55" y="99.06" size="1.778" layer="95"/>
+<pinref part="ATMEGA328" gate="G$1" pin="PB2(SS/OC1B)"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6685,6 +6637,29 @@ alternative power source (VGEN1)</text>
 <junction x="343.408" y="244.602"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="C9" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="3V3R" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="289.56" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="287.02" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="193.04" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VO"/>
+<wire x1="193.04" y1="71.12" x2="193.04" y2="76.2" width="0.2032" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<junction x="193.04" y="71.12"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<junction x="200.66" y="71.12"/>
+<label x="193.04" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="7"/>
+<wire x1="22.86" y1="40.64" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<label x="20.32" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
