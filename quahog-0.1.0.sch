@@ -5764,7 +5764,7 @@ JST PH 2-pin thru-home side entry</description>
 <part name="C4" library="LowPowerLab" deviceset="CAP" device="0603-CAP" value="0.1"/>
 <part name="C2" library="LowPowerLab" deviceset="CAP" device="0603-CAP" value="1u"/>
 <part name="C3" library="LowPowerLab" deviceset="CAP" device="0805-CAP" value="10u"/>
-<part name="U$2" library="LowPowerLab" deviceset="LED" device="0603"/>
+<part name="D1" library="LowPowerLab" deviceset="LED" device="0603"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="LowPowerLab" deviceset="RESISTOR" device="0603-RES" value="1k5"/>
 <part name="ISP" library="pinhead" deviceset="PINHD-2X3" device=""/>
@@ -5774,18 +5774,18 @@ JST PH 2-pin thru-home side entry</description>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
-<part name="RTC-DS3231" library="_lh-library" deviceset="DS3231" device="" value="DS3231"/>
+<part name="RTC" library="_lh-library" deviceset="DS3231" device="" value="DS3231"/>
 <part name="BAT" library="SparkFunNew" deviceset="BATTERY" device="BATTERY_12MM_SMT" value="CR1220"/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
-<part name="REMOTE" library="zetex" deviceset="PMOSSOT23" device="" value="FDN340P"/>
+<part name="M3" library="zetex" deviceset="PMOSSOT23" device="" value="FDN340P"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="hrs_DM3D-SF" deviceset="MICROSD-HRS_DM3D" device=""/>
-<part name="BATTPOWER" library="zetex" deviceset="PMOSSOT23" device="" value="FDN340P"/>
+<part name="SD" library="hrs_DM3D-SF" deviceset="MICROSD-HRS_DM3D" device=""/>
+<part name="M1" library="zetex" deviceset="PMOSSOT23" device="" value="FDN340P"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
-<part name="SDPWER" library="zetex" deviceset="PMOSSOT23" device="" value="FDN340P"/>
+<part name="M2" library="zetex" deviceset="PMOSSOT23" device="" value="FDN340P"/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-2X7" device=""/>
@@ -5846,7 +5846,7 @@ alternative power source (VGEN1)</text>
 <instance part="C4" gate="G$1" x="193.04" y="66.04"/>
 <instance part="C2" gate="G$1" x="243.84" y="66.04"/>
 <instance part="C3" gate="G$1" x="200.66" y="66.04"/>
-<instance part="U$2" gate="G$1" x="102.87" y="73.66" smashed="yes" rot="R90"/>
+<instance part="D1" gate="G$1" x="102.87" y="73.66" smashed="yes" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="102.87" y="66.04"/>
 <instance part="R2" gate="G$1" x="102.87" y="86.36" smashed="yes" rot="R90">
 <attribute name="VALUE" x="109.22" y="87.122" size="1.778" layer="96" rot="R180"/>
@@ -5858,21 +5858,21 @@ alternative power source (VGEN1)</text>
 <instance part="GND9" gate="1" x="311.912" y="242.062" rot="R90"/>
 <instance part="P+5" gate="VCC" x="9.906" y="232.918"/>
 <instance part="P+10" gate="VCC" x="20.066" y="233.934"/>
-<instance part="RTC-DS3231" gate="G$1" x="78.486" y="234.696"/>
+<instance part="RTC" gate="G$1" x="78.486" y="234.696"/>
 <instance part="BAT" gate="G$1" x="103.886" y="231.648" smashed="yes" rot="R270">
 <attribute name="NAME" x="108.966" y="231.648" size="1.778" layer="95"/>
 <attribute name="VALUE" x="108.966" y="229.108" size="1.778" layer="96"/>
 </instance>
 <instance part="P+9" gate="VCC" x="57.404" y="251.206"/>
-<instance part="REMOTE" gate="A" x="-116.84" y="264.16" rot="MR270"/>
+<instance part="M3" gate="A" x="-116.84" y="264.16" rot="MR270"/>
 <instance part="GND1" gate="1" x="-142.24" y="265.43" rot="R270"/>
 <instance part="P+6" gate="VCC" x="-109.982" y="267.97"/>
 <instance part="GND4" gate="1" x="413.512" y="213.868"/>
-<instance part="U$1" gate="G$1" x="290.322" y="229.362"/>
-<instance part="BATTPOWER" gate="A" x="420.116" y="257.048" rot="MR270"/>
+<instance part="SD" gate="G$1" x="290.322" y="229.362"/>
+<instance part="M1" gate="A" x="420.116" y="257.048" rot="MR270"/>
 <instance part="GND7" gate="1" x="398.018" y="257.048" rot="R270"/>
 <instance part="GND10" gate="1" x="308.102" y="207.01"/>
-<instance part="SDPWER" gate="A" x="360.68" y="271.272" rot="MR270"/>
+<instance part="M2" gate="A" x="360.68" y="271.272" rot="MR270"/>
 <instance part="GND11" gate="1" x="338.836" y="271.272" rot="R270"/>
 <instance part="P+1" gate="VCC" x="371.348" y="273.812"/>
 <instance part="JP5" gate="A" x="-99.06" y="241.3"/>
@@ -5960,7 +5960,7 @@ alternative power source (VGEN1)</text>
 <pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="MINUS"/>
+<pinref part="D1" gate="G$1" pin="MINUS"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <wire x1="102.87" y1="68.58" x2="102.87" y2="71.12" width="0.1524" layer="91"/>
 </segment>
@@ -6017,15 +6017,15 @@ alternative power source (VGEN1)</text>
 <junction x="63.246" y="230.886"/>
 <junction x="63.246" y="228.346"/>
 <junction x="63.246" y="225.806"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="GND"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@8"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@7"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@6"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@5"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@1"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@2"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@3"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="NC@4"/>
+<pinref part="RTC" gate="G$1" pin="GND"/>
+<pinref part="RTC" gate="G$1" pin="NC@8"/>
+<pinref part="RTC" gate="G$1" pin="NC@7"/>
+<pinref part="RTC" gate="G$1" pin="NC@6"/>
+<pinref part="RTC" gate="G$1" pin="NC@5"/>
+<pinref part="RTC" gate="G$1" pin="NC@1"/>
+<pinref part="RTC" gate="G$1" pin="NC@2"/>
+<pinref part="RTC" gate="G$1" pin="NC@3"/>
+<pinref part="RTC" gate="G$1" pin="NC@4"/>
 <pinref part="BAT" gate="G$1" pin="-"/>
 </segment>
 <segment>
@@ -6045,27 +6045,27 @@ alternative power source (VGEN1)</text>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="SD" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="309.372" y1="242.062" x2="308.102" y2="242.062" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="SW_B"/>
+<pinref part="SD" gate="G$1" pin="SW_B"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="308.102" y1="209.55" x2="308.102" y2="214.122" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
-<pinref part="U$1" gate="G$1" pin="GND3"/>
+<pinref part="SD" gate="G$1" pin="GND2"/>
+<pinref part="SD" gate="G$1" pin="GND3"/>
 <wire x1="308.102" y1="226.822" x2="308.102" y2="224.282" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND4"/>
+<pinref part="SD" gate="G$1" pin="GND4"/>
 <wire x1="308.102" y1="224.282" x2="308.102" y2="221.742" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SW_A"/>
+<pinref part="SD" gate="G$1" pin="SW_A"/>
 <wire x1="308.102" y1="221.742" x2="308.102" y2="216.662" width="0.1524" layer="91"/>
 <wire x1="308.102" y1="216.662" x2="308.102" y2="214.122" width="0.1524" layer="91"/>
 <junction x="308.102" y="224.282"/>
 <junction x="308.102" y="221.742"/>
 <junction x="308.102" y="216.662"/>
 <junction x="308.102" y="214.122"/>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
+<pinref part="SD" gate="G$1" pin="GND1"/>
 <wire x1="308.102" y1="229.362" x2="308.102" y2="226.822" width="0.1524" layer="91"/>
 <junction x="308.102" y="226.822"/>
 <junction x="308.102" y="229.362"/>
@@ -6142,9 +6142,9 @@ alternative power source (VGEN1)</text>
 <pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="4"/>
-<wire x1="-93.98" y1="246.38" x2="-78.74" y2="246.38" width="0.1524" layer="91"/>
-<label x="-78.74" y="246.38" size="1.778" layer="95"/>
+<pinref part="JP5" gate="A" pin="2"/>
+<wire x1="-93.98" y1="248.92" x2="-88.9" y2="248.92" width="0.1524" layer="91"/>
+<label x="-88.9" y="248.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWR" class="1">
@@ -6175,10 +6175,15 @@ alternative power source (VGEN1)</text>
 <label x="140.462" y="97.282" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BATTPOWER" gate="A" pin="S"/>
+<pinref part="M1" gate="A" pin="S"/>
 <wire x1="425.196" y1="257.048" x2="432.308" y2="257.048" width="0.1524" layer="91"/>
 <wire x1="432.308" y1="257.048" x2="432.308" y2="259.588" width="0.1524" layer="91"/>
 <label x="432.054" y="260.858" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="A" pin="14"/>
+<wire x1="-93.98" y1="233.68" x2="-88.9" y2="233.68" width="0.1524" layer="91"/>
+<label x="-88.9" y="233.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -6198,15 +6203,15 @@ alternative power source (VGEN1)</text>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 <wire x1="65.786" y1="241.046" x2="57.404" y2="241.046" width="0.1524" layer="91"/>
 <wire x1="57.404" y1="241.046" x2="57.404" y2="248.666" width="0.1524" layer="91"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="VCC"/>
+<pinref part="RTC" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="REMOTE" gate="A" pin="S"/>
+<pinref part="M3" gate="A" pin="S"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="-109.982" y1="265.43" x2="-111.76" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SDPWER" gate="A" pin="S"/>
+<pinref part="M2" gate="A" pin="S"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="371.348" y1="271.272" x2="365.76" y2="271.272" width="0.1524" layer="91"/>
 </segment>
@@ -6259,7 +6264,7 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="PB0(ICP)"/>
 </segment>
 <segment>
-<pinref part="REMOTE" gate="A" pin="G"/>
+<pinref part="M3" gate="A" pin="G"/>
 <wire x1="-114.3" y1="269.24" x2="-118.11" y2="274.32" width="0.1524" layer="91"/>
 <label x="-118.872" y="277.114" size="1.778" layer="95"/>
 </segment>
@@ -6271,7 +6276,7 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="PD7(AIN1)"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="CD/DAT3"/>
+<pinref part="SD" gate="G$1" pin="CD/DAT3"/>
 <wire x1="308.102" y1="236.982" x2="318.77" y2="236.982" width="0.1524" layer="91"/>
 <label x="320.802" y="236.982" size="1.778" layer="95"/>
 </segment>
@@ -6283,7 +6288,7 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="PD6(AIN0)"/>
 </segment>
 <segment>
-<pinref part="SDPWER" gate="A" pin="G"/>
+<pinref part="M2" gate="A" pin="G"/>
 <wire x1="363.22" y1="276.352" x2="362.966" y2="280.162" width="0.1524" layer="91"/>
 <label x="362.712" y="281.178" size="1.778" layer="95"/>
 </segment>
@@ -6294,6 +6299,12 @@ alternative power source (VGEN1)</text>
 <label x="82.55" y="114.3" size="1.778" layer="95"/>
 <pinref part="ATMEGA328" gate="G$1" pin="PD5(T1)"/>
 </segment>
+<segment>
+<pinref part="RTC" gate="G$1" pin="INT/SQW"/>
+<wire x1="65.786" y1="238.506" x2="50.038" y2="238.506" width="0.1524" layer="91"/>
+<wire x1="50.038" y1="238.506" x2="50.038" y2="239.776" width="0.1524" layer="91"/>
+<label x="48.514" y="239.776" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D4" class="0">
 <segment>
@@ -6302,7 +6313,7 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="PD4(XCK/T0)"/>
 </segment>
 <segment>
-<pinref part="BATTPOWER" gate="A" pin="G"/>
+<pinref part="M1" gate="A" pin="G"/>
 <wire x1="422.656" y1="262.128" x2="422.402" y2="265.938" width="0.1524" layer="91"/>
 <label x="422.148" y="266.954" size="1.778" layer="95"/>
 </segment>
@@ -6314,14 +6325,14 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="PD3(INT1)"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="10"/>
-<wire x1="-93.98" y1="238.76" x2="-88.9" y2="238.76" width="0.1524" layer="91"/>
-<label x="-88.9" y="238.76" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="22.86" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
 <label x="25.4" y="25.4" size="1.778" layer="95"/>
 <pinref part="J2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="A" pin="6"/>
+<wire x1="-93.98" y1="243.84" x2="-88.9" y2="243.84" width="0.1524" layer="91"/>
+<label x="-88.9" y="243.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D1_TX" class="0">
@@ -6377,6 +6388,11 @@ alternative power source (VGEN1)</text>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="JP5" gate="A" pin="8"/>
+<wire x1="-93.98" y1="241.3" x2="-88.9" y2="241.3" width="0.1524" layer="91"/>
+<label x="-88.9" y="241.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="A2" class="0">
 <segment>
@@ -6385,9 +6401,9 @@ alternative power source (VGEN1)</text>
 <pinref part="ATMEGA328" gate="G$1" pin="PC2(ADC2)"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="8"/>
-<wire x1="-93.98" y1="241.3" x2="-88.9" y2="241.3" width="0.1524" layer="91"/>
-<label x="-88.9" y="241.3" size="1.778" layer="95"/>
+<pinref part="JP5" gate="A" pin="10"/>
+<wire x1="-93.98" y1="238.76" x2="-88.9" y2="238.76" width="0.1524" layer="91"/>
+<label x="-88.9" y="238.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -6426,31 +6442,19 @@ alternative power source (VGEN1)</text>
 <label x="-109.22" y="233.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D11_MOSI" class="0">
+<net name="N$2" class="0">
 <segment>
-<pinref part="ATMEGA328" gate="G$1" pin="PB3(MOSI/OC2)"/>
-<wire x1="90.932" y1="96.52" x2="80.01" y2="96.52" width="0.1524" layer="91"/>
-<label x="82.55" y="96.52" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ISP" gate="A" pin="4"/>
-<wire x1="135.382" y1="94.742" x2="146.812" y2="94.742" width="0.1524" layer="91"/>
-<label x="140.462" y="94.742" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="PLUS"/>
+<wire x1="102.87" y1="81.28" x2="102.87" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D12_MISO" class="0">
+<net name="SCK" class="0">
 <segment>
-<wire x1="80.01" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
-<label x="82.55" y="93.98" size="1.778" layer="95"/>
-<pinref part="ATMEGA328" gate="G$1" pin="PB4(MISO)"/>
+<pinref part="SD" gate="G$1" pin="CLK"/>
+<wire x1="308.102" y1="247.142" x2="319.024" y2="247.142" width="0.1524" layer="91"/>
+<label x="320.802" y="247.142" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="ISP" gate="A" pin="1"/>
-<wire x1="127.762" y1="97.282" x2="117.602" y2="97.282" width="0.1524" layer="91"/>
-<label x="112.522" y="97.282" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D13_SCK" class="0">
 <segment>
 <wire x1="80.01" y1="91.44" x2="92.71" y2="91.44" width="0.1524" layer="91"/>
 <label x="82.55" y="91.44" size="1.778" layer="95"/>
@@ -6462,59 +6466,50 @@ alternative power source (VGEN1)</text>
 <label x="112.522" y="94.742" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="PLUS"/>
-<wire x1="102.87" y1="81.28" x2="102.87" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VBAT" class="1">
-<segment>
-<pinref part="JP5" gate="A" pin="14"/>
-<wire x1="-93.98" y1="233.68" x2="-88.9" y2="233.68" width="0.1524" layer="91"/>
-<label x="-88.9" y="233.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="CLK"/>
-<wire x1="308.102" y1="247.142" x2="319.024" y2="247.142" width="0.1524" layer="91"/>
-<label x="320.802" y="247.142" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DAT0"/>
+<pinref part="SD" gate="G$1" pin="DAT0"/>
 <wire x1="308.102" y1="249.682" x2="319.024" y2="249.682" width="0.1524" layer="91"/>
 <label x="320.802" y="249.682" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="80.01" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<label x="82.55" y="93.98" size="1.778" layer="95"/>
+<pinref part="ATMEGA328" gate="G$1" pin="PB4(MISO)"/>
+</segment>
+<segment>
+<pinref part="ISP" gate="A" pin="1"/>
+<wire x1="127.762" y1="97.282" x2="117.602" y2="97.282" width="0.1524" layer="91"/>
+<label x="112.522" y="97.282" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CMD"/>
+<pinref part="SD" gate="G$1" pin="CMD"/>
 <wire x1="308.102" y1="239.522" x2="318.77" y2="239.522" width="0.1524" layer="91"/>
 <label x="320.802" y="239.522" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="D5/RTC" class="0">
 <segment>
-<pinref part="RTC-DS3231" gate="G$1" pin="INT/SQW"/>
-<wire x1="65.786" y1="238.506" x2="50.038" y2="238.506" width="0.1524" layer="91"/>
-<wire x1="50.038" y1="238.506" x2="50.038" y2="239.776" width="0.1524" layer="91"/>
-<label x="48.514" y="239.776" size="1.778" layer="95"/>
+<pinref part="ATMEGA328" gate="G$1" pin="PB3(MOSI/OC2)"/>
+<wire x1="90.932" y1="96.52" x2="80.01" y2="96.52" width="0.1524" layer="91"/>
+<label x="82.55" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ISP" gate="A" pin="4"/>
+<wire x1="135.382" y1="94.742" x2="146.812" y2="94.742" width="0.1524" layer="91"/>
+<label x="140.462" y="94.742" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D10" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="6"/>
-<wire x1="-93.98" y1="243.84" x2="-88.9" y2="243.84" width="0.1524" layer="91"/>
-<label x="-86.36" y="243.84" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="80.01" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
 <label x="82.55" y="99.06" size="1.778" layer="95"/>
 <pinref part="ATMEGA328" gate="G$1" pin="PB2(SS/OC1B)"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="A" pin="4"/>
+<wire x1="-93.98" y1="246.38" x2="-88.9" y2="246.38" width="0.1524" layer="91"/>
+<label x="-88.9" y="246.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6525,7 +6520,7 @@ alternative power source (VGEN1)</text>
 </segment>
 <segment>
 <wire x1="91.186" y1="241.046" x2="107.442" y2="241.046" width="0.1524" layer="91"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="SDA"/>
+<pinref part="RTC" gate="G$1" pin="SDA"/>
 <label x="108.204" y="241.046" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6552,7 +6547,7 @@ alternative power source (VGEN1)</text>
 </segment>
 <segment>
 <wire x1="91.186" y1="243.586" x2="107.442" y2="243.586" width="0.1524" layer="91"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="SCL"/>
+<pinref part="RTC" gate="G$1" pin="SCL"/>
 <label x="107.95" y="244.094" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6575,31 +6570,25 @@ alternative power source (VGEN1)</text>
 <segment>
 <wire x1="91.186" y1="238.506" x2="103.886" y2="238.506" width="0.1524" layer="91"/>
 <wire x1="103.886" y1="238.506" x2="103.886" y2="236.728" width="0.1524" layer="91"/>
-<pinref part="RTC-DS3231" gate="G$1" pin="VBAT"/>
+<pinref part="RTC" gate="G$1" pin="VBAT"/>
 <pinref part="BAT" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="REMOTE" gate="A" pin="D"/>
+<pinref part="M3" gate="A" pin="D"/>
 <wire x1="-121.92" y1="264.16" x2="-127" y2="264.16" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="JP5" gate="A" pin="3"/>
 <wire x1="-127" y1="264.16" x2="-129.54" y2="264.16" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="246.38" x2="-127" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="-127" y1="246.38" x2="-127" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="-127" y1="246.38" x2="-127" y2="264.16" width="0.1524" layer="91"/>
 <junction x="-127" y="264.16"/>
-<pinref part="JP5" gate="A" pin="2"/>
-<wire x1="-127" y1="256.54" x2="-127" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="248.92" x2="-86.36" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="248.92" x2="-86.36" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="256.54" x2="-127" y2="256.54" width="0.1524" layer="91"/>
-<junction x="-127" y="256.54"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="BATTPOWER" gate="A" pin="D"/>
+<pinref part="M1" gate="A" pin="D"/>
 <wire x1="415.036" y1="257.048" x2="413.512" y2="257.048" width="0.1524" layer="91"/>
 <wire x1="413.512" y1="257.048" x2="413.512" y2="249.936" width="0.1524" layer="91"/>
 <wire x1="413.512" y1="257.048" x2="410.21" y2="257.048" width="0.1524" layer="91"/>
@@ -6610,7 +6599,7 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DAT1"/>
+<pinref part="SD" gate="G$1" pin="DAT1"/>
 <wire x1="308.102" y1="252.222" x2="308.102" y2="254.762" width="0.1524" layer="91"/>
 <wire x1="308.102" y1="254.762" x2="343.408" y2="254.762" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -6618,19 +6607,19 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DAT2"/>
+<pinref part="SD" gate="G$1" pin="DAT2"/>
 <wire x1="308.102" y1="234.442" x2="343.408" y2="234.442" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="SDPWER" gate="A" pin="D"/>
+<pinref part="M2" gate="A" pin="D"/>
 <wire x1="355.6" y1="271.272" x2="354.076" y2="271.272" width="0.1524" layer="91"/>
 <wire x1="354.076" y1="271.272" x2="349.758" y2="271.272" width="0.1524" layer="91"/>
 <junction x="354.076" y="271.272"/>
 <wire x1="354.076" y1="271.272" x2="354.076" y2="244.602" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="SD" gate="G$1" pin="VDD"/>
 <wire x1="308.102" y1="244.602" x2="343.408" y2="244.602" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="343.408" y1="244.602" x2="354.076" y2="244.602" width="0.1524" layer="91"/>
