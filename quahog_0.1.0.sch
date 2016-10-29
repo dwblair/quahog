@@ -6101,13 +6101,6 @@ alternative power source (VGEN1)</text>
 <wire x1="289.56" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D10_SS" class="0">
-<segment>
-<wire x1="80.01" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
-<label x="82.55" y="99.06" size="1.778" layer="95"/>
-<pinref part="ATMEGA328" gate="G$1" pin="PB2(SS/OC1B)"/>
-</segment>
-</net>
 <net name="RST" class="0">
 <segment>
 <label x="30.226" y="147.828" size="1.778" layer="95"/>
@@ -6516,7 +6509,12 @@ alternative power source (VGEN1)</text>
 <segment>
 <pinref part="JP5" gate="A" pin="6"/>
 <wire x1="-93.98" y1="243.84" x2="-88.9" y2="243.84" width="0.1524" layer="91"/>
-<label x="-88.9" y="243.84" size="1.778" layer="95"/>
+<label x="-86.36" y="243.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="80.01" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<label x="82.55" y="99.06" size="1.778" layer="95"/>
+<pinref part="ATMEGA328" gate="G$1" pin="PB2(SS/OC1B)"/>
 </segment>
 </net>
 <net name="SDA" class="0">
